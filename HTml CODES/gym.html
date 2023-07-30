@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #000000;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 20px;
+      background-color: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #ff0000; /* Change the color to your desired hover color */
+    }
+
+
+    section {
+      padding: 40px;
+    }
+
+    .hero-image {
+      background-image: url('834248.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-text {
+      color: #fff;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service-card {
+      width: 300px;
+      margin-bottom: 30px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .service-card h3 {
+      color: #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      width: 200px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var joinNowBtn = document.querySelector('.btn');
+      joinNowBtn.addEventListener('click', function() {
+        window.location.href = 'register.html';
+      });
+
+      var contactLink = document.querySelector('nav a[href="#Contact"]');
+      contactLink.addEventListener('click', function() {
+        window.location.href = 'contact.html';
+      });
+
+      var aboutLink = document.querySelector('nav a[href="#About"]');
+      aboutLink.addEventListener('click', function() {
+        window.location.href = 'about.html';
+      });
+
+      var servicesLink = document.querySelector('nav a[href="#Services"]');
+      servicesLink.addEventListener('click', function() {
+        window.location.href = 'services.html';
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Fitness Gym</h1>
+  </header>
+  <nav>
+    <a href="#" class="active">Home</a>
+    <a href="#About">About</a>
+    <a href="#Services">Services</a>
+    <a href="#Contact">Contact</a>
+  </nav>
+  <section class="hero-image">
+    <div class="hero-text">
+      <h2>Get Fit and Stay Healthy</h2>
+      <p>Join Fitness Gym for the ultimate fitness experience</p>
+      <a href="#" class="btn">Join Now</a>
+    </div>
+  </section>
+  <section class="services">
+    <div class="service-card">
+      <h3>Personal Training</h3>
+      <img src="personal-training.jpg" alt="Personal Training">
+      <p>Get one-on-one training with our experienced trainers.</p>
+    </div>
+    <div class="service-card">
+      <h3>Group Classes</h3>
+      <img src="group-classes.jpg" alt="Group Classes">
+      <p>Join our group fitness classes for a fun and energetic workout.</p>
+    </div>
+    <div class="service-card">
+      <h3>Cardio Equipment</h3>
+      <img src="cardio-equipment.jpg" alt="Cardio Equipment">
+      <p>We have a wide range of cardio machines to boost your endurance.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Fitness Gym. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
